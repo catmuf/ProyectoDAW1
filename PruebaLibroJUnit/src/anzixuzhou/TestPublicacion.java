@@ -13,14 +13,14 @@ public class TestPublicacion {
 
 	ArrayList <Publicacion> ListaPublicaciones;
 	
-	@Before //Antes de hacer las pruebas
+	@Before //Antes de hacer las pruebas, ejecuta cada tests de los metodos
 	public void antesQue(){
 		//crear objeto de arraylist
 		ListaPublicaciones = new ArrayList <>();
 	}
 	
 	@Test
-	public void TestLista1()
+	public void TestLongitud()
 	{ 
 		//Comprobar longitud del Arraylist
 	    ListaPublicaciones.add(new Libro("libro 1", 1,"tematica 1", 55));
@@ -38,7 +38,7 @@ public class TestPublicacion {
 	}
 	
 	@Test
-	public void TestLista2(){
+	public void TestPosicion(){
 		//determina cada posicion de los arrayLists
 		ListaPublicaciones.add(new Libro("libro 1", 1,"tematica 1", 55));
 	    assertEquals(1, ListaPublicaciones.size());
