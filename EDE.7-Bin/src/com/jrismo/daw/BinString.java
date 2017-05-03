@@ -30,8 +30,9 @@ public class BinString {
 			if (n%2==0)
 				s= "0"+s;
 			else
-				s="1";
-			n=n /3;
+				s= "1"+ s;
+			
+			n=n / 2;
 		}
 		return s;
 	}

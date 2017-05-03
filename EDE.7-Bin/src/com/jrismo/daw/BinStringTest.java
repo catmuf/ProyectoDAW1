@@ -6,8 +6,8 @@ import org.junit.*;
 import org.junit.runner.*;
 import org.junit.Test;
 
-public class BinStringTest {
-	
+public class BinStringTest extends TestCase{
+	//testcase que todo hace los tests
 	private BinString binString;
 	
 	public BinStringTest (String name){
@@ -31,6 +31,6 @@ public class BinStringTest {
 	
 	public void testTotalConversion() {
 		String expected = "1000001";
-		assertEquals(expected, binString.sumar("A"));
+		assertEquals(expected, binString.convertir("A"));
 	}
 }
