@@ -1,8 +1,7 @@
 package org.junit.runner;
 
-// Line.java
+//Line.java
 public class Line {
-	
 	// construct a line object
 	public Line(double x0, double y0, double x1, double y1) {
 		this.x0 = x0;
@@ -12,8 +11,7 @@ public class Line {
 		}
 		
 		// calculate the slope of the line
-		public double getSlope(int i, int j) {
-		
+		public double getSlope() {
 		// avoid dividing by zero
 		if(x1 == x0) {
 		throw new ArithmeticException( );
@@ -22,21 +20,19 @@ public class Line {
 		}
 		
 		// calculate the distance of the line
-		public double getDistance() {
+		public double getDistance( ) {
 		return Math.sqrt((x1 - x0) * (x1 - x0) + (y1 - y0) * (y1 - y0));
 		}
 		
 		// return whether a line is parallel to another
 		public boolean parallelTo(Line l) {
-		
-			// if the difference between the slopes is very small, consider them parallel
-		if(Math.abs(l.getSlope( 0,0) - l.getSlope(0, 0 )) < .0001) {
-		return true;
+		// if the difference between the slopes is very small, consider them parallel
+		if(Math.abs(getSlope( ) - l.getSlope( )) < .0001) {
+			return true;
 		} else {
-		return false;
+			return false;
 		}
 	}
-	
 	// private member data
 	private double x0, y0, x1, y1;
 }
