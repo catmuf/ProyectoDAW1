@@ -46,6 +46,16 @@ public class Fecha {
 		if (dia > diasMes)
 		return false;
 		else return true;
-	}
+	
+	/*public boolean bisiesto(){
+		case 2 : // verificación de año bisiesto
+		if ( (anio % 400 == 0) || ( (anio % 4 == 0) && (anio
+		% 100 != 0) ) )
+		diasMes = 29;
+		else
+		diasMes = 28;
+		break;
+	}*/
 	// … más métodos
+	}
 }

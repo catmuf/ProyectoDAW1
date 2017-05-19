@@ -32,6 +32,61 @@ public class FechaTest extends TestCase {
 	@Test
 	public void testValida() {
 		assertTrue(fechaCorrecta.valida());
+	
+		assertFalse(mesIncorrecto.valida());
+
+		assertTrue(mesCorrecto.valida());
+
+		assertFalse(cambiarDiaNoviembre.valida());
+
+		assertTrue(cambiarDiaDiciembre.valida());
+
+		assertFalse(febreroDia.valida());
+
+		assertTrue(ComprobarFecha.valida());
+
+		assertTrue(ComprobarFechaNoExiste.valida());
+
+		assertTrue(ComprobarAño.valida());
 	}
+	//prueba
+	/*
+	@Test
+	public void testIncorrecto() {
+		assertFalse(mesIncorrecto.valida());
+	}
+	
+	@Test
+	public void testMesCorrecto() {
+		assertTrue(mesCorrecto.valida());
+	}
+	
+	@Test
+	public void testDiaNoviembre() {
+		assertFalse(cambiarDiaNoviembre.valida());
+	}
+	
+	@Test
+	public void testDiaDiciembre() {
+		assertTrue(cambiarDiaDiciembre.valida());
+	}
+	
+	@Test
+	public void testDiaFebrero() {
+		assertFalse(febreroDia.valida());
+	}
+	
+	@Test
+	public void testFechaExiste() {
+		assertTrue(ComprobarFecha.valida());
+	}
+	@Test
+	public void testFechaNoExiste() {
+		assertTrue(ComprobarFechaNoExiste.valida());
+	}
+	@Test
+	public void testAnyo() {
+		assertTrue(ComprobarAño.valida());
+	}*/
 	
 }
